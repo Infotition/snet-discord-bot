@@ -1,0 +1,39 @@
+{
+  "name": "code-runner-discord-bot",
+  "version": "1.0.0",
+  "description": "The code runner discord bot can be used to format code with petron and run it with piston inside discord.",
+  "author": "Infotition",
+  "license": "MIT",
+  "homepage": "https://github.com/Infotition/code-runner-discord-bot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infotition/code-runner-discord-bot"
+  },
+  "scripts": {
+    "parse": "tsc",
+    "start": "npm run parse&& cd ./dist/&& node index.js",
+    "devStart": "npm run parse&& cd ./dist/&& nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^8.1.1",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.2.1",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
