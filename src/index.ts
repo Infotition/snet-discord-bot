@@ -1,26 +1,26 @@
-export {};
 //* ------------------- DEPENDENCIES ------------------ *\\
 
 //* Node modules
-const Discord = require('discord.js');
+import Discord from 'discord.js';
 
-//* Module imports
-const readCommands = require('./utils/readCommands');
-const initializeServer = require('./utils/discord/initializeServer');
+//* Environments
+import dotenv from 'dotenv';
+
+dotenv.config({
+  path: `./config/index.env`,
+});
+
+//* Function imports
+import readCommands from './utils/discord/readCommands';
 
 //* ------------------ CONFIGURATION ------------------ *\\
 
-const client = new Discord.Client();
-
-require('dotenv').config({
-  path: '../config/index.env',
-});
+const client: Discord.Client = new Discord.Client();
 
 //* ------------------ DISCORD EVENTS ----------------- *\\
 client.on('ready', () => {
   console.log('discord client is ready');
-  readCommands('../commands', client);
-  initializeServer(client);
+  readCommands(client);
 });
 
 //* -------------------- START BOT -------------------- *\\

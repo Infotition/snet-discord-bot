@@ -1,4 +1,4 @@
-//* ------------------ CONFIGURATION ------------------ *\\
+//* ------------------ CONSTS ------------------ *\\
 
 const validPermissions = [
   'CREATE_INSTANT_INVITE',
@@ -34,12 +34,4 @@ const validPermissions = [
   'MANAGE_EMOJIS',
 ];
 
-//* --------------- ValidatePermissions --------------- *\\
-
-module.exports = (permissions: Array<string>) => {
-  permissions.forEach((permission: string) => {
-    if (!validPermissions.includes(permission)) {
-      throw new Error(`unknown permission node "${permission}`);
-    }
-  });
-};
+export default validPermissions;

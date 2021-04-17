@@ -10,12 +10,17 @@
     "url": "git+https://github.com/Infotition/code-runner-discord-bot"
   },
   "scripts": {
-    "parse": "tsc",
-    "start": "npm run parse&& cd ./dist/&& node index.js",
-    "devStart": "npm run parse&& cd ./dist/&& nodemon index.js"
+    "webpack:build": "cross-env NODE_ENV=production&& webpack",
+    "webpack:start": "cross-env NODE_ENV=development&& webpack serve",
+
+    "start:build": "npm run webpack:build&& cd ./build/&& node index.js",
+    "start:dev": "npm run webpack:start&& cd ./build/&& node index.js",
+
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0"
   },

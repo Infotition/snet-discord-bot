@@ -1,6 +1,6 @@
 //* ---------------------- Status --------------------- *\\
 
-module.exports = {
+const status = {
   commands: 'status',
   expectedArgs: '[text]',
   permissionError: 'You need admin permissions to run this command.',
@@ -20,3 +20,7 @@ module.exports = {
   },
   permissions: 'ADMINISTRATOR',
 };
+
+//* --------------------- EXPORTS --------------------- *\\
+
+export default status;

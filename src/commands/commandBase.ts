@@ -1,13 +1,16 @@
-export {};
 //* ------------------- DEPENDENCIES ------------------ *\\
 
 //* Module imports
-const { prefix } = require('../../config/config.json');
-const validatePermissions = require('../utils/validatePermissions');
+import config from '../config/config';
+import validatePermissions from '../utils/discord/validatePermissions';
+
+//* ------------------ CONFIGURATION ------------------ *\\
+
+const { prefix } = config;
 
 //* ------------------- CommandBase ------------------- *\\
 
-module.exports = (client: any, commandOptions: any) => {
+function commandBase(client: any, commandOptions: any) {
   const {
     expectedArgs = '',
     permissionError = 'You do not have permission to run this command.',
@@ -91,4 +94,8 @@ module.exports = (client: any, commandOptions: any) => {
       return null;
     });
   });
-};
+}
+
+//* --------------------- EXPORTS --------------------- *\\
+
+export default commandBase;

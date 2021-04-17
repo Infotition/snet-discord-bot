@@ -1,14 +1,12 @@
 //* ------------------- DEPENDENCIES ------------------ *\\
 
-//* Node modules
-const axios = require('axios');
-
 //* Module imports
-const { MessageAttachment } = require('discord.js');
+import axios from 'axios';
+import { MessageAttachment } from 'discord.js';
 
 //* --------------------- Format --------------------- *\\
 
-module.exports = {
+const petronize = {
   commands: ['format'],
   expectedArgs: '<theme> \n <code>',
   permissionError: 'You need admin permissions to run this command.',
@@ -32,3 +30,7 @@ module.exports = {
   },
   permissions: 'ADMINISTRATOR',
 };
+
+//* --------------------- EXPORTS --------------------- *\\
+
+export default petronize;
