@@ -3,7 +3,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  mode: process.env.NODE_ENV || "production",
+  // mode: process.env.NODE_ENV || "production",
+  mode: "development",
 
   entry: "./src/index.ts",
   target: "node",
@@ -19,8 +20,8 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [".ts", ".js"],
-    modules: [path.resolve(__dirname, "node_modules"), "node_modules"],
+    extensions: [".ts", ".js", ".json"],
+    modules: [path.resolve(__dirname, "node_modules"), "node_modules", "src"],
   },
 
   module: {

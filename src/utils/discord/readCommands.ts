@@ -12,11 +12,11 @@ import commandBase from '../../commands/commandBase';
 import status from '../../commands/misc/status';
 
 // Petron
-import petronize from '../../commands/petron/petronize';
+import format from '../../commands/petron/format';
 
 //* ------------------ CONFIGURATION ------------------ *\\
 
-const commands = [status, petronize];
+const commands = [status, format];
 
 //* ------------------- ReadCommands ------------------ *\\
 

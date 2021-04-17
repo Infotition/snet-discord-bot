@@ -2,11 +2,11 @@
 
 //* Module imports
 import axios from 'axios';
-import { MessageAttachment } from 'discord.js';
+// import { MessageAttachment } from 'discord.js';
 
 //* --------------------- Format --------------------- *\\
 
-const petronize = {
+const format = {
   commands: ['format'],
   expectedArgs: '<theme> \n <code>',
   permissionError: 'You need admin permissions to run this command.',
@@ -19,13 +19,13 @@ const petronize = {
     const data = { theme, code, token: process.env.PETRON_TOKEN };
 
     axios
-      .get('http://www.infotition.de:3000/api/petron/format', { data })
+      .get('snetpetron://snetpetron:3000/api/petron/petronize', { data })
       .then((response: any) => {
-        const attachment = new MessageAttachment(response.data.msg);
-        message.reply(attachment).then(() => message.delete());
+        // const attachment = new MessageAttachment(response.data.msg);
+        message.reply(response.data.msg).then(() => message.delete());
       })
       .catch((error: any) => {
-        console.log(error.response.data.errors);
+        console.log(error);
       });
   },
   permissions: 'ADMINISTRATOR',
@@ -33,4 +33,4 @@ const petronize = {
 
 //* --------------------- EXPORTS --------------------- *\\
 
-export default petronize;
+export default format;

@@ -4,7 +4,7 @@
 import Discord from 'discord.js';
 
 //* Function imports
-import config from '../config/config';
+import config from '../consts/discord/config';
 import validatePermissions from '../utils/discord/validatePermissions';
 
 //* ------------------ CONFIGURATION ------------------ *\\

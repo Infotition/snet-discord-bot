@@ -1,0 +1,18 @@
+version: '3'
+services:
+  discord:
+    container_name: snet-discord
+    restart: always
+    build: .
+    ports:
+      - '80:3000'
+    external_links:
+      - snetpetron
+  petron:
+    container_name: snetpetron
+    restart: always
+    cap_add:
+      - SYS_ADMIN
+    image: infotition/petron
+    ports:
+      - '3000:3000'
