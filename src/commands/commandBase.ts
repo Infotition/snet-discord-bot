@@ -1,6 +1,9 @@
 //* ------------------- DEPENDENCIES ------------------ *\\
 
-//* Module imports
+//* Node modules
+import Discord from 'discord.js';
+
+//* Function imports
 import config from '../config/config';
 import validatePermissions from '../utils/discord/validatePermissions';
 
@@ -10,7 +13,7 @@ const { prefix } = config;
 
 //* ------------------- CommandBase ------------------- *\\
 
-function commandBase(client: any, commandOptions: any) {
+function commandBase(client: Discord.Client, commandOptions: any) {
   const {
     expectedArgs = '',
     permissionError = 'You do not have permission to run this command.',

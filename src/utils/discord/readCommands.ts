@@ -1,5 +1,8 @@
 //* ------------------- DEPENDENCIES ------------------ *\\
 
+//* Node modules
+import Discord from 'discord.js';
+
 //* Function imports
 import commandBase from '../../commands/commandBase';
 
@@ -17,7 +20,7 @@ const commands = [status, petronize];
 
 //* ------------------- ReadCommands ------------------ *\\
 
-function readCommands(client: any) {
+function readCommands(client: Discord.Client) {
   commands.forEach((command) => {
     commandBase(client, command);
   });
