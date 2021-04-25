@@ -1,7 +1,7 @@
 {
-  "name": "code-runner-discord-bot",
+  "name": "snet-discord-bot",
   "version": "1.0.0",
-  "description": "The code runner discord bot can be used to format code with petron and run it with piston inside discord.",
+  "description": "The snet discord bot can be used to format code with petron and run it with piston inside discord.",
   "author": "Infotition",
   "license": "MIT",
   "homepage": "https://github.com/Infotition/code-runner-discord-bot#readme",

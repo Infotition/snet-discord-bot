@@ -3,21 +3,21 @@
   <p>
     <a href="https://infotition.de"><img src="https://i.imgur.com/JopXqvx.png" width=600px alt="infotition logo" /></a>
   </p>
-  <h1>Infotition Discord Bot</h1>
+  <h1>Snet Discord Bot</h1>
   <p>
-    The Infotition Discord Bot is a feature-rich server moderation Discord bot with <a href="https://www.patreon.com/infotition">Patreon</a> and <a href="https://www.infotition.de">Infotition</a>Technologie integration. 
+    The snet discord bot can be used to format code with petron and run it with piston inside discord
   </p>
   <br>
   <p>
-    <a href="https://david-dm.org/Infotition/infotition-discord-bot" title="dependencies status">
-      <img src="https://status.david-dm.org/gh/Infotition/infotition-discord-bot.svg"/>
+    <a href="https://david-dm.org/Infotition/snet-discord-bot" title="dependencies status">
+      <img src="https://status.david-dm.org/gh/Infotition/snet-discord-bot.svg"/>
     </a>
-    <a href="https://david-dm.org/Infotition/infotition-discord-bot?type=dev" title="devDependencies status">
-      <img src="https://status.david-dm.org/gh/Infotition/infotition-discord-bot.svg?type=dev"/>
+    <a href="https://david-dm.org/Infotition/snet-discord-bot?type=dev" title="devDependencies status">
+      <img src="https://status.david-dm.org/gh/Infotition/snet-discord-bot.svg?type=dev"/>
     </a>
     <br>
-    <a href="https://github.com/Infotition/infotition-discord-bot/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/Infotition/infotition-discord-bot" alt="Lizens" />
+    <a href="https://github.com/Infotition/snet-discord-bot/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/Infotition/snet-discord-bot" alt="Lizens" />
     </a> 
     <a href="https://discord.gg/NpxrDGYDwV">
       <img src="https://img.shields.io/discord/792139920260464670?color=7289da&logo=discord&logoColor=white" alt="Discord server" />
@@ -35,7 +35,7 @@
 
 Before creating an issue, please ensure that it hasn't already been reported/suggested and double-check the current features.
 
-See the [contribution guide](https://github.com/Infotition/infotition-discord-bot/blob/main/.github/CONTRIBUTING.md) if you'd like to submit a Pull request.
+See the [contribution guide](https://github.com/Infotition/snet-discord-bot/blob/main/.github/CONTRIBUTING.md) if you'd like to submit a Pull request.
 
 # Help
 
@@ -43,4 +43,4 @@ If you are experiencing problems while installing/coding the bot, need hints or 
 
 # License
 
-The infotition discord bot is available under the Apache License 2.0, see the [LICENSE](https://github.com/Infotition/infotition-discord-bot/blob/main/LICENSE) file for more information.
+The infotition discord bot is available under the Apache License 2.0, see the [LICENSE](https://github.com/Infotition/snet-discord-bot/blob/main/LICENSE) file for more information.
