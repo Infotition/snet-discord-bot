@@ -10,6 +10,8 @@ services:
       - snetpetron
   petron:
     container_name: snetpetron
+    environment:
+      HOST: www.infotition
     restart: always
     cap_add:
       - SYS_ADMIN
